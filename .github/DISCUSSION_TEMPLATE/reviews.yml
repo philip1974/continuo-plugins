@@ -1,0 +1,49 @@
+title: "[plugin-id] 简短标题"
+labels: ["review"]
+body:
+  - type: input
+    id: plugin-id
+    attributes:
+      label: Plugin ID
+      description: 你评价的 plugin id,例 com.example.sample。**必须**与 manifest.id 一致,Continuo 据此聚合。
+      placeholder: com.example.foo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: rating
+    attributes:
+      label: 评分
+      description: 整体打分(Continuo 端会算各 plugin 的平均星)
+      options:
+        - "★ 1"
+        - "★★ 2"
+        - "★★★ 3"
+        - "★★★★ 4"
+        - "★★★★★ 5"
+    validations:
+      required: true
+
+  - type: textarea
+    id: review
+    attributes:
+      label: 评论正文
+      description: 用了多久 / 解决了什么问题 / 还差什么 / 推荐给谁。Markdown OK。
+      placeholder: |
+        我用 Sample Plugin 一周,主要看中它的 ...
+    validations:
+      required: true
+
+  - type: input
+    id: continuo-version
+    attributes:
+      label: Continuo 版本(可选)
+      description: 你测的 Continuo 版本号
+      placeholder: 0.1.0
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin 版本(可选)
+      description: 你装的 plugin 版本
+      placeholder: 0.2.0
