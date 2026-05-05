@@ -1,0 +1,13 @@
+[
+  {
+    "id": "com.example.sample",
+    "name": "Sample Plugin",
+    "description": "演示 9 贡献点(命令 / 状态栏时钟 / Ribbon / 事件 / Settings tab / Explorer 装饰 / Editor action / loadData/saveData / 权限 demo)",
+    "author": "philip1974",
+    "authorUrl": "https://github.com/philip1974",
+    "repo": "philip1974/continuo-sample-plugin",
+    "branch": "main",
+    "tags": ["sample", "demo", "v5"],
+    "verified": true
+  }
+]
