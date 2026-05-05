@@ -75,6 +75,31 @@ export default class MyPlugin extends Plugin {
 - 不在 plugin 里暴露用户私密数据到外部 API(用户授了 network 不等于授了 telemetry)
 - review 通过后保持 plugin repo 维护;长期失修可能被取消 verified 标记
 
+## 评价插件
+
+商店里的 plugin 卡片都显示星级 + 评价数。任何人都能写评价:
+
+1. 进 [Discussions tab](https://github.com/philip1974/continuo-plugins/discussions)
+2. 点 **New discussion** → 选 General(模板会自动应用)
+3. 按表单填:
+   - **Plugin ID** — 你评价的 plugin manifest.id(如 `com.example.sample`)
+   - **评分** — 1-5 星
+   - **评论正文** — 用了多久 / 解决了什么 / 不足
+   - 可选 Continuo / plugin 版本
+4. 提交,Continuo app 1 小时内拉到并展示
+
+**评价显示规则**:
+- 标题需含 `[plugin-id]`,Continuo 据此聚合
+- 评分按 1-5 算术平均(不加权 / 不去极端)
+- "👍" 反应数 → 排序"最有用"参考
+- 维护者(philip1974)显蓝色 🛡 角标
+- GitHub 注册 < 7 天的账号显黄色 ⚠ 角标(慎信)
+
+**别这样**:
+- 跟 plugin 作者吵 → 直接到他 plugin repo 提 issue 沟通
+- 灌水 / 无内容 → 维护者会删
+- 同一作者多账号刷好评 → 维护者会撤 verified 标记
+
 ## 反馈
 
 bug / 建议 → 提 issue。
