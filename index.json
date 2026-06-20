@@ -9,5 +9,16 @@
     "branch": "main",
     "tags": ["sample", "demo", "v5"],
     "verified": true
+  },
+  {
+    "id": "com.continuo.skills-manager",
+    "name": "Continuo CLAUDE Code skills manager",
+    "description": "GUI manager for Claude Code skills (User + Project scope; SKILL.md preview required before install).",
+    "author": "philip1974",
+    "authorUrl": "https://github.com/philip1974",
+    "repo": "philip1974/continuo-skills-manager-plugin",
+    "branch": "main",
+    "tags": ["skills", "claude-code", "manager"],
+    "verified": true
   }
 ]
